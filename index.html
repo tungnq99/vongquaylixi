@@ -130,25 +130,25 @@
         },
         {
             'fillStyle': '#ab6f03',
-            'text': '40.000 VNĐ',
-            'textFontSize': 16,
-            'textFillStyle': '#ffffff'
-        },
-        {
-            'fillStyle': '#910f06',
             'text': '20.000 VNĐ',
             'textFontSize': 16,
             'textFillStyle': '#ffffff'
         },
         {
-            'fillStyle': '#ab6f03',
+            'fillStyle': '#910f06',
             'text': '50.000 VNĐ',
             'textFontSize': 16,
             'textFillStyle': '#ffffff'
         },
         {
-            'fillStyle': '#910f06',
+            'fillStyle': '#ab6f03',
             'text': '100.000 VNĐ',
+            'textFontSize': 16,
+            'textFillStyle': '#ffffff'
+        },
+        {
+            'fillStyle': '#910f06',
+            'text': '500.000 VNĐ',
             'textFontSize': 16,
             'textFillStyle': '#ffffff'
         },
@@ -224,8 +224,8 @@
 
             // Công thức này luôn làm cho bánh xe dừng ở đâu đó bên trong giải 3 
             // cách mép đầu và mép cuối của đoạn ít nhất 1 độ. 
-            const array = [22, 65, 115, 200, 250, 300]
-            let stopAt = array[randomIntFromInterval(0, 4)];
+            const array = [22, 65, 115, 200, 250]
+            let stopAt = array[randomIntFromInterval(0, 3.2)];
             // Điều quan trọng là đặt stopAngle của hoạt ảnh trước khi nêu vòng quay. 
             theWheel.animation.stopAngle = stopAt; 
             // Bắt đầu quay bằng cách gọi startAnimation.
